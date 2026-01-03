@@ -1,0 +1,65 @@
+body {
+    background: #121212; /* To'q rangli fon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.player-container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 650px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.player-container:hover {
+    transform: translateY(-5px);
+}
+
+.player-header h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.player-header p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+#music-frame {
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 556px; /* Iframe balandligi */
+    transition: height 0.5s ease;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.player-footer {
+    margin-top: 15px;
+}
+
+#toggle-btn {
+    background: #ffdb4d; /* Yandex rangiga yaqin */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#toggle-btn:hover {
+    background: #ffcc00;
+}
